@@ -1,9 +1,9 @@
 # VBA of Wall Street Challenge
 
 ## Purose
-'The purpose and background are well defined (2 pt).
 
-The purpose of this challenge was to refactor code we wrote during the asynchronous section to do the same calculations and formating as the original but in a more efficent, quicker way. The code we wrote was to analyse stocks for our friend Steve, a new finacial planner putting together an investment strategy for his parents. The data set he asked up to look at contains information on prices and trading volumes for twelve stocks in the green energy sector for the years 2017 and 2018. Steve says a summary of the starting prices and ending prices along with the trading volume for each year will help him make a recomendation to his parents.
+
+TThe purpose of this challenge was to refactor code we wrote during the asynchronous section to do the same calculations and formating as the original but in a more efficent, quicker way. The code we wrote was to analyse stocks for our friend Steve, a new financial planner putting together an investment strategy for his parents. The data set he asked up to look at contains information on prices and trading volumes for twelve stocks in the green energy sector for the years 2017 and 2018. Steve says a summary of the starting prices and ending prices along with the trading volume for each year will help him make a recommendation to his parents.
 
 ## Results
 ### Stock Analysis
@@ -13,11 +13,11 @@ Our analysis of the data Steve provided is summarized in the following images. E
 
 ![2018 Analysis](/Resources/AllStocks(2018).png)
 
-The trend does not look good for this entire sector. In 2017 11 out of the 12 stocks returned profits with 4 of the 12 returning better than 100% for the year! In 2017 the entire sector was hot and it was almost impossible to lose. The numbers for 2018 tell a different story. In 2018 only 2 of the 12 stocks we tracked turned a profit. Loses were the norm for the sector with the worst proformers down as much as 60% for the year suggesting that coming out of 2017 the market thought that many of these companies were overvalued.
-After looking at the trend within the sector Steve would do well to tell his parents to hold off buying into green energy until furthur analysis can be done showing that the prices withing the sector had bottomed out and were primed for a rebound.
+The trend does not look good for this entire sector. In 2017 11 out of the 12 stocks returned profits with 4 of the 12 returning better than 100% for the year! In 2017 the entire sector was hot and it was almost impossible to lose. The numbers for 2018 tell a different story. In 2018 only 2 of the 12 stocks we tracked turned a profit. Loses were the norm for the sector with the worst performers down as much as 60% for the year suggesting that coming out of 2017 the market thought that many of these companies were overvalued.
+After looking at the trend within the sector Steve would do well to tell his parents to hold off buying into green energy until further analysis can be done showing that the prices withing the sector had bottomed out and were primed for a rebound.
 
 ### Code & Execution Time
-Below you can see the original code I used to perform the analysis along with the refactored code. There are only a few subtile changes within the code. The original uses Nested For Loops to compile the values and output them into a new sheet before moving on to the next ticker symbol. The refactored code makes use of three dirrefent arrays to store values (tickerVolumes, tickerStartingPrices and tickerEndingPrices) eliminating the need to nest loops. This new approach cuts the execution time of the script significantly as you can see in the screenshots below the code blocks.
+Below you can see the original code I used to perform the analysis along with the refactored code. There are only a few subtle changes within the code. The original uses Nested For Loops to compile the values and output them into a new sheet before moving on to the next ticker symbol. The refactored code makes use of three different arrays to store values (tickerVolumes, tickerStartingPrices and tickerEndingPrices) eliminating the need to nest loops. This new approach cuts the execution time of the script significantly as you can see in the screenshots below the code blocks.
 
 #### Original Code Using Nested Loops
 
@@ -30,7 +30,6 @@ Dim startTime As Single
     yearValue = InputBox("What year would you like to run the analysis on?")
 
 startTime = Timer
-
 
    '1) Format the output sheet on All Stocks Analysis worksheet
 
@@ -137,7 +136,6 @@ startTime = Timer
 
 End Sub
 ~~~
-
 
 
 
@@ -269,7 +267,6 @@ Sub AllStocksAnalysisRefactored()
 End Sub
 ~~~
 
-
 #### Original Code 2017
 ![2017 Original](/Resources/Analysis2017.png)
 
@@ -282,13 +279,13 @@ End Sub
 #### Refactored Code 2018
 ![2018 Refactor](/Resources/Refactor2018.png)
 
-
 ## Summary
 
-The main advantage to refactoring code is to optimize it. When code is optimized it can preform the same functions and produce the same output while using fewer system resources and thus producing results faster. Refactoring code can also make more elegant and it easier to understand.
+The main advantage to refactoring code is to optimize it. When code is optimized, it can perform the same functions and produce the same output while using fewer system resources and thus producing results faster. Refactoring code can also make more elegant and it easier to understand.
 
-The disadvantages that must be considered when deciding weither of not to refactor some existing, working code are that it adds expense to the project, at least up front. Time and resources must be spent doing the gritty work of refactoring. It is also prossible that while attempting to refactor for ease of use a developer could break the old code, particularly if they don't understand the original well. Breaking working software in an attempt to optimize it leads lead to delays and cost overruns. 
+The disadvantages that must be considered when deciding whether of not to refactor some existing, working code are that it adds expense to the project, at least up front. Time and resources must be spent doing the gritty work of refactoring. It is also possible that while attempting to refactor for ease of use a developer could break the old code, particularly if they don't understand the original well. Breaking working software in an attempt to optimize it leads lead to delays and cost overruns. 
 
-The advantages of the refactor are fairly obvious as described in the results section. The new code ran and produced results about six times faster than the original script. The new code was able to run faster because it utilized arrays to store values. The original code used a nested loop that printed the output values of each stock line by line before moving on the next stock. The refactored code utilizes an array to store the calulated values for each stock before outputing them all at the end of the process. It seems like a very minor change but the run times of each script show the use of the array made the refactored script much more efficent. 
+The advantages of the refactor are fairly obvious as described in the results section. The new code ran and produced results about six times faster than the original script. The new code was able to run faster because it utilized arrays to store values. The original code used a nested loop that printed the output values of each stock line by line before moving on the next stock. The refactored code utilizes an array to store the calculated values for each stock before outputting them all at the end of the process. It seems like a very minor change but the run times of each script show the use of the array made the refactored script much more efficient. 
 
-I am having trouble coming up with any disadvantages of refactoring in this case. The only con that comes to mind is that it required a fair amount of time as I am still working to grasp the concepts and syntax of VBA. 
+I am having trouble coming up with any disadvantages of refactoring in this case. The only con that comes to mind is that it required a fair amount of time as I am still working to grasp the concepts and syntax of VBA. I also learned how important formatting is. The original code I wrote was not very easy to go back into and understand because I did not format it well or use white space appropriate.
+
