@@ -8,9 +8,9 @@ The purpose of this challenge was to refactor code we wrote during the asynchron
 ## Results
 ### Stock Analysis
 Our analysis of the data Steve provided is summarized in the following images. Each of these tables describes the starting price, ending price and total trading volume of the stocks along with the yearly return by percentage. 
-![2017 Analysis](Resources\AllStocks(2017).png)
+![2017 Analysis (/Resources/AllStocks(2017).png)
 
-![2018 Analysis](Resources\AllStocks(2018).png)
+![2018 Analysis](/Resources/AllStocks(2018).png)
 
 The trend does not look good for this entire sector. In 2017 11 out of the 12 stocks returned profits with 4 of the 12 returning better than 100% for the year! In 2017 the entire sector was hot and it was almost impossible to lose. The numbers for 2018 tell a different story. In 2018 only 2 of the 12 stocks we tracked turned a profit. Loses were the norm for the sector with the worst proformers down as much as 60% for the year suggesting that coming out of 2017 the market thought that many of these companies were overvalued.
 After looking at the trend within the sector Steve would do well to tell his parents to hold off buying into green energy until furthur analysis can be done showing that the prices withing the sector had bottomed out and were primed for a rebound.
@@ -262,16 +262,16 @@ End Sub
 
 
 #### Original Code 2017
-![2017 Original](Resources\Analysis2017.png)
+![2017 Original](/Resources/Analysis2017.png)
 
 #### Refactored Code 2017
-![2017 Refactor](Resources\Refactor2017.png)
+![2017 Refactor](/Resources/Refactor2017.png)
 
 #### Original Code 2018
-![2018 Original](Resources\Analysis2018.png)
+![2018 Original](/Resources/Analysis2018.png)
 
 #### Refactored Code 2018
-![2018 Refactor](Resources\Refactor2018.png)
+![2018 Refactor](/Resources/Refactor2018.png)
 
 Using images and examples of your code, compare the stock performance between 2017 and 2018, as well as the execution times of the original script and the refactored script.
 Results
