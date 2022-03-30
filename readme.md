@@ -8,7 +8,7 @@ The purpose of this challenge was to refactor code we wrote during the asynchron
 ## Results
 ### Stock Analysis
 Our analysis of the data Steve provided is summarized in the following images. Each of these tables describes the starting price, ending price and total trading volume of the stocks along with the yearly return by percentage. 
-![2017 Analysis (/Resources/AllStocks(2017).png)
+![2017 Analysis](/Resources/AllStocks(2017).png)
 
 ![2018 Analysis](/Resources/AllStocks(2018).png)
 
@@ -262,7 +262,7 @@ End Sub
 
 
 #### Original Code 2017
-![2017 Original](/Resources/Analysis2017.png)
+![2017 Original](/Resources/Analysis2017.png.png
 
 #### Refactored Code 2017
 ![2017 Refactor](/Resources/Refactor2017.png)
@@ -278,8 +278,6 @@ Results
 'The analysis is well described with screenshots and code (4 pt).
 
 ## Summary
-
-'What are the advantages or disadvantages of refactoring code?
 
 The main advantage to refactoring code is to optimize it. When code is optimized it can preform the same functions and produce the same output while using fewer system resources and thus producing results faster. Refactoring code can also make more elegant and it easier to understand.
 
