@@ -271,13 +271,13 @@ End Sub
 ![2017 Original](/Resources/Analysis2017.png)
 
 #### Refactored Code 2017
-![2017 Refactor](/Resources/Refactor2017.png)
+![2017 Refactor](/Resources/VBA_Challenge_2017.png)
 
 #### Original Code 2018
 ![2018 Original](/Resources/Analysis2018.png)
 
 #### Refactored Code 2018
-![2018 Refactor](/Resources/Refactor2018.png)
+![2018 Refactor](/Resources/VBA_Challenge_2018.png)
 
 ## Summary
 
